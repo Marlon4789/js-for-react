@@ -266,4 +266,42 @@ const userInfo = {
 console.log(userInfo)
 */
 
+// OPCIONAL CHAINIG => Para acceder a los datos de un objeto por ej: APIs etc...
+// no siempre se save que datos son los que vienen, asi que hacemos una condición 'if'
+// o una condición '?'
+/*
+const user = {
+    name: 'may',
+    city: {
+        address: 'sucre'
+    },
+    location:{},
+}
+
+// si esta location lo muestra, si no esta es 'undefind'
+console.log(user.location?.city)
+*/
+
+// ASYNC Y AWAIT
+ 
+const ul = document.createElement('ul');
+
+async function loadData() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const data = await response.json()
+    console.log(data)
+
+    // recorrer
+    data.forEach(function (post) {
+        const li = document.createElement('li');
+        li.innerText = post.title;
+        ul.append(li)
+    });
+    document.body.append(ul);
+}
+
+
+loadData()
+console.log('linea 2')
+
 
