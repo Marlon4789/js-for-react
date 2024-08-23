@@ -175,9 +175,10 @@ document.body.append(button)
 */
 
 // STRING LITERALS
+/*
 const background = 'yellow'
 const color = 'black'
-const isAuthorized = true;
+const isAuthorized = false;
 
 const button = document.createElement('button')
 button.innerText = 'click me'
@@ -192,3 +193,77 @@ button.addEventListener('click', () => {
 })
 
 document.body.append(button)
+*/
+
+// METODOS DE ARRAYS
+
+const names = ['toby', 'lucas', 'dina']
+
+// for (let i = 0; i < names.length; i++) {
+//     const element = names[i];
+//     console.log(element) 
+// }
+
+// forEach => rcorrer los valores del array
+// names.forEach(function(name){
+//     console.log(name)
+// })
+
+// map => recorre y el array y crea un array nuevo
+// const newNames = names.map(function(name){
+//     return `Hola ${name}`
+// })
+// console.log(newNames)
+
+// find => recorrer un array y buscar un elemento y añdir condicion
+// const newFind = names.find(function(name){
+//     if(name == 'dina'){
+//         return name
+//     }
+// })
+// console.log(newFind)
+
+// filter => crea un nuevo array apartir de los elementos filtrados
+// const newFilter = names.filter(function(name){
+//     if (name != 'dina') {
+//         return name
+//     }
+// })
+
+// console.log(newFilter)
+
+// concat => une los elementos de dos arrays y los concatena y crea uno nuevo array.
+
+// const names2 = ['toby', 'lucas', 'dina']
+// const names3 = ['sara', 'pepe', 'nina']
+
+// console.log(names2.concat(names3))
+
+// SPREAT OPERATOR => cpncatena los elementos de un array con otro y
+// crea un nuevo array, y tambien con objetos.
+/*
+const names2 = ['toby', 'lucas', 'dina']
+const names3 = ['sara', 'pepe', 'nina']
+
+console.log(...names2, ...names3)
+
+const user = {
+    name: 'may',
+    lastname: 'zore',
+}
+
+const address = {
+    country: 'colombia',
+    city: 'cali',
+}
+// generar un objeto nuevo
+
+const userInfo = {
+    ...user,
+    ...address,
+}
+
+console.log(userInfo)
+*/
+
+
